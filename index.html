@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 
 <meta charset="UTF-8">
-<title>Veloura Studio Casting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Veloura Studio | Casting</title>
+
+<meta name="description" content="Casting abierto Veloura Studio. Buscamos modelos con o sin experiencia para sesiones fotográficas editoriales y artísticas.">
 
 <style>
 
@@ -12,21 +16,16 @@ body{
 font-family:Arial;
 margin:0;
 background:#f4f4f4;
-animation:fadein 1s;
+scroll-behavior:smooth;
 }
 
-@keyframes fadein{
-from{opacity:0}
-to{opacity:1}
-}
-
-/* MENU SUPERIOR */
+/* MENU */
 
 nav{
 position:fixed;
 top:0;
 width:100%;
-background:black;
+background:rgba(0,0,0,0.75);
 color:white;
 display:flex;
 justify-content:space-between;
@@ -35,49 +34,51 @@ padding:15px 40px;
 z-index:10;
 }
 
-nav h2{
-margin:0;
-font-size:20px;
-}
-
 nav a{
 color:white;
 text-decoration:none;
 margin-left:20px;
-font-size:14px;
 }
 
 /* PORTADA */
 
 .hero{
 background:
-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
 url("portada.jpg");
 background-size:cover;
 background-position:center;
-height:90vh;
+height:100vh;
 color:white;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
 }
 
 .hero h1{
-font-size:60px;
-margin:10px;
-letter-spacing:3px;
+font-size:70px;
+letter-spacing:5px;
 }
 
 .hero p{
-font-size:20px;
+font-size:22px;
 }
 
 .logo{
-width:130px;
+width:140px;
 margin-bottom:20px;
+}
+
+.boton{
+background:black;
+color:white;
+padding:15px 25px;
+border-radius:6px;
+text-decoration:none;
+margin-top:15px;
+display:inline-block;
 }
 
 /* SECCIONES */
@@ -89,36 +90,23 @@ padding:80px 20px;
 text-align:center;
 }
 
-section h2{
-font-size:32px;
-margin-bottom:20px;
-}
+/* CUPOS */
 
-/* BOTONES */
-
-.boton{
+.cupos{
 background:black;
 color:white;
-padding:15px 25px;
-text-decoration:none;
-border-radius:6px;
-font-size:18px;
-display:inline-block;
-margin-top:20px;
-transition:0.3s;
+padding:30px;
+border-radius:10px;
+margin-top:30px;
+font-size:22px;
 }
 
-.boton:hover{
-transform:scale(1.08);
-}
-
-/* MODELOS DESTACADOS */
+/* MODELOS */
 
 .destacados{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
-margin-top:40px;
 }
 
 .destacados img{
@@ -142,12 +130,60 @@ width:100%;
 height:300px;
 object-fit:cover;
 border-radius:10px;
-transition:0.4s;
+cursor:pointer;
+transition:transform .5s;
 }
 
 .galeria img:hover{
-transform:scale(1.05);
-box-shadow:0px 10px 25px rgba(0,0,0,0.3);
+transform:scale(1.12);
+}
+
+/* LIGHTBOX */
+
+#lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:100;
+}
+
+#lightbox img{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+}
+
+/* FORMULARIO */
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-top:30px;
+}
+
+input,textarea{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+padding:14px;
+border:none;
+background:black;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
 }
 
 /* FOOTER */
@@ -155,8 +191,8 @@ box-shadow:0px 10px 25px rgba(0,0,0,0.3);
 footer{
 background:black;
 color:white;
-text-align:center;
 padding:25px;
+text-align:center;
 }
 
 /* WHATSAPP */
@@ -171,7 +207,6 @@ padding:18px;
 border-radius:50%;
 font-size:28px;
 text-decoration:none;
-box-shadow:0px 6px 15px rgba(0,0,0,0.3);
 }
 
 </style>
@@ -180,11 +215,9 @@ box-shadow:0px 6px 15px rgba(0,0,0,0.3);
 
 <body>
 
-<!-- MENU -->
-
 <nav>
 
-<h2>Veloura Studio</h2>
+<h3>Veloura Studio</h3>
 
 <div>
 
@@ -207,30 +240,34 @@ box-shadow:0px 6px 15px rgba(0,0,0,0.3);
 
 <p>Casting abierto • Con o sin experiencia</p>
 
-<a class="boton" href="#casting">
-Aplicar al casting
+<a class="boton" href="#casting">Aplicar al casting</a>
+
+<a class="boton" href="https://wa.me/522284987991?text=Hola%20quiero%20participar%20en%20el%20casting%20de%20Veloura%20Studio">
+Enviar fotos por WhatsApp
 </a>
 
 </div>
 
-<!-- SOBRE AGENCIA -->
+<!-- SOBRE -->
 
 <section id="sobre">
 
 <h2>Sobre la agencia</h2>
 
 <p>
+
 Veloura Studio es un proyecto creativo dedicado a descubrir
 nuevos talentos para sesiones fotográficas, contenido visual
-y proyectos artísticos. Realizamos sesiones de en lenceria y
-desnudo artistico para aquellas personas que buaquen romper estereotipos.
+y proyectos artísticos.
 
-Invitamos a chicas de todas las edades y tallas.
+Trabajamos con fotografía en lenceria, desnudo artístico y
+proyectos visuales contemporáneos.
+
 </p>
 
 </section>
 
-<!-- MODELOS DESTACADOS -->
+<!-- MODELOS -->
 
 <section id="modelos">
 
@@ -238,8 +275,8 @@ Invitamos a chicas de todas las edades y tallas.
 
 <div class="destacados">
 
-<img src="modelo1.jpg">
-<img src="modelo2.jpg">
+<img src="modelo1">
+<img src="modelo2">
 <img src="modelo3.jpg">
 
 </div>
@@ -257,7 +294,6 @@ Invitamos a chicas de todas las edades y tallas.
 <img src="modelo4.jpg">
 <img src="modelo5.jpg">
 <img src="modelo6.jpg">
-<img src="modelo7.jpg">
 <img src="modelo7.jpg">
 <img src="modelo8.jpg">
 <img src="modelo9.jpg">
@@ -281,29 +317,60 @@ Invitamos a chicas de todas las edades y tallas.
 
 <h2>Aplicar al casting</h2>
 
-<p>
-Completa el formulario para enviar tu solicitud
-y participar en futuras sesiones.
-</p>
+<div class="cupos">
+Cupos disponibles: <span id="contador">12</span>
+</div>
 
-<iframe src="LINK_FORMULARIO"
-width="100%"
-height="700"
-frameborder="0">
-</iframe>
+<p>Completa el formulario para participar.</p>
+
+<form>
+
+<input type="text" placeholder="Nombre">
+
+<input type="number" placeholder="Edad">
+
+<input type="text" placeholder="Ciudad">
+
+<input type="text" placeholder="Instagram">
+
+<textarea placeholder="Cuéntanos un poco sobre ti"></textarea>
+
+<button>Enviar solicitud</button>
+
+</form>
 
 </section>
 
 <footer>
 
-<p>Veloura Studio © 2026</p>
+Veloura Studio © 2026
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/522284987991">
+<a class="whatsapp" href="https://wa.me/522284987991?text=Hola%20quiero%20información%20sobre%20el%20casting%20de%20Veloura%20Studio">
 💬
 </a>
 
-</body>
+<div id="lightbox">
+<img id="lightbox-img">
+</div>
 
+<script>
+
+const images=document.querySelectorAll(".galeria img")
+const lightbox=document.getElementById("lightbox")
+const lightboxImg=document.getElementById("lightbox-img")
+
+images.forEach(img=>{
+img.addEventListener("click",()=>{
+lightbox.style.display="flex"
+lightboxImg.src=img.src
+})
+})
+
+lightbox.onclick=()=>lightbox.style.display="none"
+
+</script>
+
+</body>
 </html>
