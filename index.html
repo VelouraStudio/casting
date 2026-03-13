@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Veloura Studio Casting</title>
+<title>Nova Faces Casting</title>
 
 <style>
 
@@ -12,22 +12,35 @@ body{
 font-family:Arial;
 margin:0;
 background:#f4f4f4;
+animation:fadein 1.5s;
 }
 
-header{
-background:black;
+@keyframes fadein{
+from{opacity:0}
+to{opacity:1}
+}
+
+.hero{
+background:url("portada.jpg");
+background-size:cover;
+background-position:center;
+height:500px;
 color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:70px 20px;
 }
 
-header h1{
-font-size:42px;
-margin:0;
+.hero h1{
+font-size:50px;
+margin:10px;
 }
 
-header p{
-font-size:18px;
+.logo{
+width:120px;
+margin-bottom:20px;
 }
 
 section{
@@ -78,46 +91,55 @@ text-align:center;
 padding:20px;
 }
 
+/* BOTON FLOTANTE */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:18px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<header>
+<div class="hero">
+
+<img src="logo.png" class="logo">
 
 <h1>VELOURA STUDIO CASTING</h1>
 
 <p>Convocatoria abierta • Con o sin experiencia</p>
 
-<br>
-
-<a class="boton" href="https://wa.me/521TU_NUMERO">
-Contactar por WhatsApp
-</a>
-
 <a class="boton2" href="LINK_FORMULARIO">
 Aplicar al casting
 </a>
 
-</header>
+</div>
 
 <section>
 
 <h2>Sobre la agencia</h2>
 
 <p>
-Somos un proyecto dedicado a descubrir nuevos rostros para sesiones
-fotográficas y proyectos visuales. Buscamos personas con o sin
-experiencia interesadas en participar en diferentes estilos de fotografía. 
-Manejamos estilos de modelaje en lenceria y desnudo artístico
+Descubrimos nuevos rostros para sesiones fotográficas,
+contenido visual y proyectos creativos. Realizamos 
+sesiones para modelaje en lenceria y desnudo artístico.
 </p>
 
 </section>
 
 <section>
 
-<h2>Estilos de fotografía</h2>
+<h2>Tipos de fotografía</h2>
 
 <p>Editorial</p>
 <p>Retrato artístico</p>
@@ -129,40 +151,25 @@ Manejamos estilos de modelaje en lenceria y desnudo artístico
 
 <section>
 
-<h2>Ejemplos de estilos de modelaje</h2>
+<h2>Galería</h2>
 
 <div class="galeria">
 
-<img src="modelo1">
-
-<img src="modelo2">
-
+<img src="modelo1.jpg">
+<img src="modelo2.jpg">
 <img src="modelo3.jpg">
-
 <img src="modelo4.jpg">
-
 <img src="modelo5.jpg">
-
 <img src="modelo6.jpg">
-
 <img src="modelo7.jpg">
-
 <img src="modelo8.jpg">
-
 <img src="modelo9.jpg">
-
 <img src="modelo10.jpg">
-
 <img src="modelo11.jpg">
-
 <img src="modelo12.jpg">
-
 <img src="modelo13.jpg">
-
 <img src="modelo14.jpg">
-
 <img src="modelo15.jpg">
-
 <img src="modelo16.jpg">
 
 </div>
@@ -173,10 +180,7 @@ Manejamos estilos de modelaje en lenceria y desnudo artístico
 
 <h2>Aplicar al casting</h2>
 
-<p>
-Si estás interesada en participar puedes enviar tu solicitud
-completando el formulario o escribiendo por WhatsApp.
-</p>
+<p>Completa el formulario para enviar tu solicitud.</p>
 
 <a class="boton2" href="LINK_FORMULARIO">
 Enviar solicitud
@@ -184,27 +188,15 @@ Enviar solicitud
 
 </section>
 
-<section>
-
-<h2>Preguntas frecuentes</h2>
-
-<p><b>¿Necesito experiencia?</b></p>
-<p>No. El casting está abierto para personas con o sin experiencia.</p>
-
-<p><b>¿Qué tipo de sesiones se realizan?</b></p>
-<p>Fotografía editorial, artística y promocional.</p>
-
-<p><b>¿Cómo me contactarán?</b></p>
-<p>Por WhatsApp o redes sociales después de revisar la solicitud.</p>
-
-</section>
-
 <footer>
 
-<p>Nova Faces Casting 2026</p>
+<p>Veloura Studio Casting 2026</p>
 
 </footer>
 
-</body>
+<a class="whatsapp" href="https://wa.me/522284987991">
+W
+</a>
 
+</body>
 </html>
