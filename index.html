@@ -6,9 +6,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Veloura Studio | Casting</title>
+<title>Veloura Studio | Casting de Modelos</title>
 
-<meta name="description" content="Casting abierto Veloura Studio. Buscamos modelos con o sin experiencia para sesiones fotográficas editoriales y artísticas.">
+<meta name="description" content="Casting abierto Veloura Studio. Buscamos modelos con o sin experiencia para sesiones fotográficas artísticas.">
+
+<meta name="keywords" content="casting modelos mexico, modelaje veracruz, agencia veloura studio">
 
 <style>
 
@@ -25,26 +27,29 @@ nav{
 position:fixed;
 top:0;
 width:100%;
-background:rgba(0,0,0,0.75);
+background:rgba(0,0,0,0.85);
 color:white;
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:15px 40px;
+padding:15px 25px;
 z-index:10;
+}
+
+nav h3{
+margin-right:30px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:20px;
+margin-right:20px;
 }
 
 /* PORTADA */
 
 .hero{
 background:
-linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url("portada.jpg");
 background-size:cover;
 background-position:center;
@@ -60,10 +65,6 @@ text-align:center;
 .hero h1{
 font-size:70px;
 letter-spacing:5px;
-}
-
-.hero p{
-font-size:22px;
 }
 
 .logo{
@@ -86,7 +87,7 @@ display:inline-block;
 section{
 max-width:1000px;
 margin:auto;
-padding:80px 20px;
+padding:100px 20px;
 text-align:center;
 }
 
@@ -95,10 +96,11 @@ text-align:center;
 .cupos{
 background:black;
 color:white;
-padding:30px;
+padding:25px;
 border-radius:10px;
-margin-top:30px;
+margin:20px auto;
 font-size:22px;
+max-width:400px;
 }
 
 /* MODELOS */
@@ -107,6 +109,7 @@ font-size:22px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
+margin-top:30px;
 }
 
 .destacados img{
@@ -136,54 +139,6 @@ transition:transform .5s;
 
 .galeria img:hover{
 transform:scale(1.12);
-}
-
-/* LIGHTBOX */
-
-#lightbox{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.9);
-display:none;
-justify-content:center;
-align-items:center;
-z-index:100;
-}
-
-#lightbox img{
-max-width:90%;
-max-height:90%;
-border-radius:10px;
-}
-
-/* FORMULARIO */
-
-form{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:10px;
-margin-top:30px;
-}
-
-input,textarea{
-padding:12px;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-button{
-padding:14px;
-border:none;
-background:black;
-color:white;
-font-size:16px;
-border-radius:6px;
-cursor:pointer;
 }
 
 /* FOOTER */
@@ -219,14 +174,10 @@ text-decoration:none;
 
 <h3>Veloura Studio</h3>
 
-<div>
-
 <a href="#sobre">Agencia</a>
 <a href="#modelos">Modelos</a>
 <a href="#galeria">Galería</a>
 <a href="#casting">Casting</a>
-
-</div>
 
 </nav>
 
@@ -240,15 +191,15 @@ text-decoration:none;
 
 <p>Casting abierto • Con o sin experiencia</p>
 
-<a class="boton" href="#casting">Aplicar al casting</a>
+<a class="boton" href="LINK_FORMULARIO">
+Aplicar al casting
+</a>
 
-<a class="boton" href="https://wa.me/522284987991?text=Hola%20quiero%20participar%20en%20el%20casting%20de%20Veloura%20Studio">
-Enviar fotos por WhatsApp
+<a class="boton" href="https://wa.me/522284987991?text=Hola%20tengo%20dudas%20sobre%20el%20casting%20de%20Veloura%20Studio">
+Dudas, contáctame por WhatsApp
 </a>
 
 </div>
-
-<!-- SOBRE -->
 
 <section id="sobre">
 
@@ -256,18 +207,13 @@ Enviar fotos por WhatsApp
 
 <p>
 
-Veloura Studio es un proyecto creativo dedicado a descubrir
-nuevos talentos para sesiones fotográficas, contenido visual
-y proyectos artísticos.
-
-Trabajamos con fotografía en lenceria, desnudo artístico y
-proyectos visuales contemporáneos.
+Veloura Studio es un proyecto creativo enfocado en descubrir
+nuevos talentos para sesiones fotográficas editoriales
+y proyectos visuales.
 
 </p>
 
 </section>
-
-<!-- MODELOS -->
 
 <section id="modelos">
 
@@ -275,69 +221,42 @@ proyectos visuales contemporáneos.
 
 <div class="destacados">
 
-<img src="modelo1">
-<img src="modelo2">
-<img src="modelo3.jpg">
+<img src="modelo1.jpg" loading="lazy">
+<img src="modelo2.jpg" loading="lazy">
+<img src="modelo3.jpg" loading="lazy">
 
 </div>
 
 </section>
-
-<!-- GALERIA -->
 
 <section id="galeria">
 
-<h2>Estilos de modelaje</h2>
+<h2>Galería</h2>
 
 <div class="galeria">
 
-<img src="modelo4.jpg">
-<img src="modelo5.jpg">
-<img src="modelo6.jpg">
-<img src="modelo7.jpg">
-<img src="modelo8.jpg">
-<img src="modelo9.jpg">
-<img src="modelo10.jpg">
-<img src="modelo11.jpg">
-<img src="modelo12.jpg">
-<img src="modelo13.jpg">
-<img src="modelo14.jpg">
-<img src="modelo15.jpg">
-<img src="modelo16.jpg">
-<img src="modelo17.jpg">
-<img src="modelo18.jpg">
+<img src="modelo4.jpg" loading="lazy">
+<img src="modelo5.jpg" loading="lazy">
+<img src="modelo6.jpg" loading="lazy">
+<img src="modelo7.jpg" loading="lazy">
+<img src="modelo8.jpg" loading="lazy">
+<img src="modelo9.jpg" loading="lazy">
 
 </div>
 
 </section>
-
-<!-- CASTING -->
 
 <section id="casting">
 
 <h2>Aplicar al casting</h2>
 
 <div class="cupos">
-Cupos disponibles: <span id="contador">12</span>
+Cupos disponibles: <span id="cupos">12</span>
 </div>
 
-<p>Completa el formulario para participar.</p>
-
-<form>
-
-<input type="text" placeholder="Nombre">
-
-<input type="number" placeholder="Edad">
-
-<input type="text" placeholder="Ciudad">
-
-<input type="text" placeholder="Instagram">
-
-<textarea placeholder="Cuéntanos un poco sobre ti"></textarea>
-
-<button>Enviar solicitud</button>
-
-</form>
+<a class="boton" href="LINK_FORMULARIO">
+Ir al formulario
+</a>
 
 </section>
 
@@ -347,28 +266,20 @@ Veloura Studio © 2026
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/522284987991?text=Hola%20quiero%20información%20sobre%20el%20casting%20de%20Veloura%20Studio">
+<a class="whatsapp" href="https://wa.me/522284987991?text=Hola%20tengo%20dudas%20sobre%20el%20casting%20de%20Veloura%20Studio">
 💬
 </a>
 
-<div id="lightbox">
-<img id="lightbox-img">
-</div>
-
 <script>
 
-const images=document.querySelectorAll(".galeria img")
-const lightbox=document.getElementById("lightbox")
-const lightboxImg=document.getElementById("lightbox-img")
+let cupos = localStorage.getItem("cupos")
 
-images.forEach(img=>{
-img.addEventListener("click",()=>{
-lightbox.style.display="flex"
-lightboxImg.src=img.src
-})
-})
+if(!cupos){
+cupos = 12
+localStorage.setItem("cupos",cupos)
+}
 
-lightbox.onclick=()=>lightbox.style.display="none"
+document.getElementById("cupos").innerText=cupos
 
 </script>
 
