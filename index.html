@@ -21,11 +21,13 @@ to{opacity:1}
 }
 
 .hero{
-background:url("portada.jpg");
+background:
+linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+url("portada.jpg");
 background-size:cover;
 background-position:center;
 height:500px;
-color:black;
+color:white;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -50,38 +52,49 @@ padding:50px 20px;
 text-align:center;
 }
 
-.boton{
-background:#25D366;
-color:black;
+.boton,.boton2{
 padding:15px 25px;
 text-decoration:none;
 border-radius:6px;
 font-size:18px;
 display:inline-block;
 margin:10px;
+transition:all 0.3s;
+}
+
+.boton{
+background:#25D366;
+color:white;
 }
 
 .boton2{
 background:black;
 color:white;
-padding:15px 25px;
-text-decoration:none;
-border-radius:6px;
-font-size:18px;
-display:inline-block;
-margin:10px;
+}
+
+.boton:hover,.boton2:hover{
+transform:scale(1.07);
 }
 
 .galeria{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-margin-top:30px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:40px;
+padding:10px;
 }
 
 .galeria img{
 width:100%;
-border-radius:8px;
+height:300px;
+object-fit:cover;
+border-radius:10px;
+transition:transform 0.4s, box-shadow 0.4s;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+box-shadow:0px 10px 25px rgba(0,0,0,0.3);
 }
 
 footer{
@@ -101,8 +114,14 @@ background:#25D366;
 color:white;
 padding:18px;
 border-radius:50%;
-font-size:22px;
+font-size:26px;
 text-decoration:none;
+box-shadow:0px 6px 15px rgba(0,0,0,0.3);
+transition:transform 0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
 }
 
 </style>
